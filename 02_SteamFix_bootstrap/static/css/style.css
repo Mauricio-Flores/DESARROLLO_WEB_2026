@@ -1,0 +1,68 @@
+/*1. Fondo negro general y fuente Roboto */
+body {
+    background-color: #141414;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    /* Evita que la página se rompa hacia los lados */
+}
+
+/* 2. Barra de navegación inicialmente transparente */
+.barra-oscura {
+    background-color: transparent;
+    transition: background-color 0.4s ease;
+    /* Cambio suave */
+}
+
+/* 3. Clase que nuestro JavaScript añade al bajar (fondo negro) */
+.navbar-scrolled {
+    background-color: #141414;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    /* Sombrilla sutil */
+}
+
+/* 4. La imagen de fondo de Stranger Things con un difuminado negro */
+.hero-portada {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%),
+        url('https://images.alphacoders.com/133/1338193.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 5. Subimos las películas para que monten encima del banner */
+.seccion-catalogo {
+    margin-top: -120px;
+    position: relative;
+    z-index: 10;
+}
+
+/* 6. Animación al pasar el mouse por las películas */
+.tarjeta-pelicula {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.tarjeta-pelicula:hover {
+    transform: scale(1.1);
+    /* Crece 10% */
+    z-index: 20;
+    /* Se viene al frente */
+}
+
+/* 7. Estandarizamos todas las portadas al mismo tamaño */
+.card-img {
+    height: 320px;
+    object-fit: cover;
+    /* Evita que las caras se aplasten */
+}
+
+/* 8. Responsive: En celulares, los pósters son más pequeños */
+@media (max-width: 768px) {
+    .card-img {
+        height: 250px;
+    }
+
+    .seccion-catalogo {
+        margin-top: -50px;
+        /* Sube menos en celular */
+    }
+}
