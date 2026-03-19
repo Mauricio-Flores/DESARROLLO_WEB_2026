@@ -1,12 +1,43 @@
-.container-fluid img{
-    width: 30px;
+:root {
+    --bs-body-bg: #000;
+    --bs-body-color: #fff;
 }
 
-#iniciarSesion {
-    background-color: rgb(41, 41, 41);
-    color: #fff
+.hero {
+    min-height: 100vh;
+    border-bottom: 8px solid #222;
 }
 
-#globe {
-    font-size: 20px;
+.netflix-red {
+    color: #e50914;
+}
+
+.bg-netflix-red {
+    background-color: #e50914;
+}
+
+.bg-netflix-red:hover {
+    background-color: #f40612;
+}
+
+.section-divider {
+    border-top: 8px solid #222;
+}
+
+.accordion-button {
+    font-size: 1.1rem;
+}
+
+.tv-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tv-video {
+    position: absolute;
+    top: 26%;
+    left: 11.5%;
+    width: 77%;
+    height: 47%;
+    object-fit: cover;
 }
