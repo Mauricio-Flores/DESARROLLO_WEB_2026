@@ -2,98 +2,302 @@
 <html lang="es" data-bs-theme="dark">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="mauricioflores@liceovvh.cl,, martinrojas@liceovvh.cl">
     <title>Netflix</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
-<body class=" text-white">
-    <nav class="navbar px-4 px-md-5 py-3 position-absolute w-100 top-0">
-        <a class="navbar-brand fw-bolder fst-italic fs-2 netflix-red text-decoration-none" href="#">NETFLIX</a>
-        <div class="d-flex gap-2 ms-auto align-items-center">
-            <select class="form-select form-select-sm bg-black text-white border-secondary" style="width:auto">
+<body>
+
+    <!-- nav -->
+    <nav class="navbar px-4 py-3 position-absolute w-100 top-0 z-3">
+        <a class="navbar-brand fw-bolder fs-2 netflix-red text-decoration-none" style="letter-spacing:1px;" href="#">NETFLIX</a>
+        <div class="d-flex gap-3 align-items-center">
+            <select class="form-select bg-dark text-white border-secondary rounded-1 px-4 py-1" style="width:auto;">
                 <option>🌐 Español</option>
                 <option>English</option>
             </select>
-            <a href="#" class="btn bg-netflix-red text-white fw-semibold px-3 py-1">Iniciar sesión</a>
+            <a href="#" class="btn bg-netflix-red text-white fw-semibold rounded-1 px-3 py-1">Iniciar sesión</a>
         </div>
     </nav>
-    <section class="hero d-flex align-items-center justify-content-center text-center">
-        <div class="px-3" style="max-width:640px">
-            <h1 class="fw-bold fs-1 mb-3">Películas, series y mucho más, sin límites.</h1>
-            <h2 class="fs-4 fw-normal mb-3">Ve donde quieras. Cancela cuando quieras.</h2>
-            <p class="mb-2">¿Quieres ver Netflix? Ingresa tu email para crear o reactivar tu cuenta.</p>
-            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center mt-3">
-                <input type="email" class="form-control bg-black text-white border-secondary"
-                    placeholder="Dirección de email" style="max-width:320px" />
-                <button class="btn bg-netflix-red text-white fw-bold px-4">Comenzar <i
-                        class="bi bi-chevron-right"></i></button>
+    
+    <section class="rrib">
+        <div class="container px-3 mt-5" style="max-width:900px;">
+            <h1 class="display-3 fw-bold mb-3">Películas y series ilimitadas y mucho más</h1>
+            <p class="fs-4 mb-4">A partir de $7.190. Cancela cuando quieras.</p>
+            <p class="fs-5 mb-3">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center mx-auto" style="max-width:600px;">
+                <input type="email" class="form-control form-control-lg bg-dark text-white border-secondary" placeholder="Email">
+                <button class="btn bg-netflix-red text-white fw-bold fs-4 px-4 d-flex align-items-center gap-2">
+                    Comenzar <i class="bi bi-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
-    <section class="py-5 border-bottom border-secondary border-opacity-25">
-        <div class="container" style="max-width:860px">
-            <h2 class="fw-bold text-center mb-4 fs-1">Preguntas frecuentes</h2>
-            <div class="accordion" id="faq">
-                <div class="accordion-item bg-dark border-0 mb-2">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-dark text-white" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#f1">¿Qué es Netflix?</button>
-                    </h2>
-                    <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faq">
-                        <div class="accordion-body text-white-50">Netflix es un servicio de streaming con series,
-                            películas, documentales y más en miles de dispositivos. Sin anuncios, por una tarifa mensual
-                            fija.</div>
-                    </div>
-                </div>
-                <div class="accordion-item bg-dark border-0 mb-2">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-dark text-white" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#f2">¿Cuánto cuesta Netflix?</button>
-                    </h2>
-                    <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faq">
-                        <div class="accordion-body text-white-50">Los planes van desde $5.990 hasta $15.990 al mes. Sin
-                            contratos. Puedes cambiar o cancelar cuando quieras.</div>
-                    </div>
-                </div>
-                <div class="accordion-item bg-dark border-0 mb-2">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-dark text-white" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#f3">¿Dónde puedo ver Netflix?</button>
-                    </h2>
-                    <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faq">
-                        <div class="accordion-body text-white-50">En cualquier dispositivo conectado a internet: Smart
-                            TV, smartphone, tablet, laptop, consolas y más.</div>
-                    </div>
-                </div>
-                <div class="accordion-item bg-dark border-0 mb-2">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-dark text-white" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#f4">¿Cómo cancelo mi suscripción?</button>
-                    </h2>
-                    <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faq">
-                        <div class="accordion-body text-white-50">Sin contratos ni compromisos. Cancela en línea en dos
-                            clics, sin cargos adicionales.</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="text-center mt-5">
-                <p class="mb-3">¿Listo para ver? Ingresa tu email para crear o reactivar tu cuenta.</p>
-                <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center">
-                    <input type="email" class="form-control bg-black text-white border-secondary"
-                        placeholder="Dirección de email" style="max-width:300px" />
-                    <button class="btn bg-netflix-red text-white fw-bold px-4">Comenzar <i
-                            class="bi bi-chevron-right"></i></button>
+    <!-- tendencias -->
+    <section class="py-5" style="background:#000;">
+        <div class="px-5 mb-2">
+            <h2 class="fs-4 fw-bold">Tendencias</h2>
+        </div>
+        <div class="trending-wrapper px-5">
+            <button id="btn-left" class="carousel-arrow left d-none" onclick="moverse(-1)">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <div id="trending-carousel" class="trending-scroll">
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="One Piece" data-ano="2026" data-clasificacion="13+" data-genero="Serie, Acción, Fantasía, Aventuras"
+                    data-desc="Acompañado de su ecléctica tripulación, el joven pirata Monkey D. Luffy emprende un viaje en busca de un tesoro legendario en esta adaptación del popular manga."
+                    data-img="static/images/op.webp">
+                    <span class="trend-number">1</span>
+                    <img src="static/images/op.webp" alt="One Piece">
+                </div>
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="Bridgerton" data-ano="2026" data-clasificacion="16+" data-genero="Serie, Romances, Dramas"
+                    data-desc="La nueva historia que sacude a la alta sociedad: el eterno soltero Benedict Bridgerton se enamora de una carismática criada disfrazada en un baile de máscaras."
+                    data-img="static/images/br.webp">
+                    <span class="trend-number">2</span>
+                    <img src="static/images/br.webp" alt="Bridgerton">
+                </div>
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="Máquina de Guerra" data-ano="2026" data-clasificacion="16+" data-genero="Película, Acción, Sci-fi"
+                    data-desc="En su última misión de entrenamiento, un ingeniero de combate debe liderar a su unidad en una lucha por sobrevivir ante una amenaza inimaginable."
+                    data-img="static/images/mg.webp">
+                    <span class="trend-number">3</span>
+                    <img src="static/images/mg.webp" alt="Máquina de Guerra">
+                </div>
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="La Reina del Flow" data-ano="2024" data-clasificacion="16+" data-genero="Serie, Drama, Música"
+                    data-desc="Una talentosa compositora busca venganza tras ser traicionada por quienes más amaba, usando la música como su arma."
+                    data-img="static/images/rey.webp">
+                    <span class="trend-number">4</span>
+                    <img src="static/images/rey.webp" alt="La Reina del Flow">
+                </div>
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="En el Barro" data-ano="2025" data-clasificacion="16+" data-genero="Serie, Drama"
+                    data-desc="Un grupo de personas atrapadas en circunstancias extremas deben enfrentarse a sus propios límites para sobrevivir."
+                    data-img="static/images/barro.webp">
+                    <span class="trend-number">5</span>
+                    <img src="static/images/barro.webp" alt="En el Barro">
+                </div>
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="Stranger Things" data-ano="2025" data-clasificacion="16+" data-genero="Serie, Terror, Sci-Fi"
+                    data-desc="Un grupo de niños en Hawkins, Indiana, descubre fuerzas sobrenaturales y experimentos secretos del gobierno mientras buscan a su amigo desaparecido."
+                    data-img="static/images/st.webp">
+                    <span class="trend-number">6</span>
+                    <img src="static/images/st.webp" alt="Stranger Things">
+                </div>
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="Un Novio por Suscripción" data-ano="2025" data-clasificacion="13+" data-genero="Serie, Comedia, Romance"
+                    data-desc="Una joven contrata un servicio de novios virtuales y termina enamorándose de alguien inesperado en el proceso."
+                    data-img="static/images/bf.webp">
+                    <span class="trend-number">7</span>
+                    <img src="static/images/bf.webp" alt="Un novio por suscripción">
+                </div>
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="Los Dinosaurios" data-ano="2024" data-clasificacion="7+" data-genero="Documental, Naturaleza"
+                    data-desc="Un viaje visual impresionante al mundo de los dinosaurios, con tecnología de última generación para recrear estos gigantes prehistóricos."
+                    data-img="static/images/dino.webp">
+                    <span class="trend-number">8</span>
+                    <img src="static/images/dino.webp" alt="Los Dinosaurios">
+                </div>
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="Las Guerreras Kpop" data-ano="2025" data-clasificacion="13+" data-genero="Serie, Música, Drama"
+                    data-desc="Un grupo de jóvenes talentosas lucha por abrirse paso en la feroz industria del K-pop coreano."
+                    data-img="static/images/kpop.webp">
+                    <span class="trend-number">9</span>
+                    <img src="static/images/kpop.webp" alt="Las Guerreras Kpop">
+                </div>
+
+                <div class="trend-item" data-bs-toggle="modal" data-bs-target="#serieModal"
+                    data-titulo="Baki-Dou" data-ano="2024" data-clasificacion="18+" data-genero="Anime, Acción"
+                    data-desc="Baki Hanma continúa su camino para convertirse en el luchador más fuerte del mundo, enfrentando rivales cada vez más poderosos."
+                    data-img="static/images/baki.webp">
+                    <span class="trend-number last">10</span>
+                    <img src="static/images/baki.webp" alt="Baki-Dou">
+                </div>
+
+            </div>
+            <button id="btn-right" class="carousel-arrow right" onclick="moverse(1)">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- motivos -->
+    <section class="py-5 section-divider container" style="max-width:1200px;">
+        <h2 class="fs-4 fw-bold mb-4">Más motivos para unirte</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-3">
+            <div class="col">
+                <div class="reason-card p-4">
+                    <h3 class="fs-5 fw-bold mb-3">Disfruta en tu TV</h3>
+                    <p class="text-white-50 fs-6">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+                    <i class="bi bi-tv position-absolute bottom-0 end-0 m-4 fs-1 text-primary"></i>
+                </div>
+            </div>
+            <div class="col">
+                <div class="reason-card p-4">
+                    <h3 class="fs-5 fw-bold mb-3">Descarga tus series para verlas offline</h3>
+                    <p class="text-white-50 fs-6">Guarda tu contenido favorito y siempre tendrás algo para ver.</p>
+                    <i class="bi bi-download position-absolute bottom-0 end-0 m-4 fs-1 text-info"></i>
+                </div>
+            </div>
+            <div class="col">
+                <div class="reason-card p-4">
+                    <h3 class="fs-5 fw-bold mb-3">Disfruta donde quieras</h3>
+                    <p class="text-white-50 fs-6">Películas y series ilimitadas en tu teléfono, tablet, laptop y TV.</p>
+                    <i class="bi bi-phone position-absolute bottom-0 end-0 m-4 fs-1 text-danger"></i>
+                </div>
+            </div>
+            <div class="col">
+                <div class="reason-card p-4">
+                    <h3 class="fs-5 fw-bold mb-3">Crea perfiles para niños</h3>
+                    <p class="text-white-50 fs-6">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos.</p>
+                    <i class="bi bi-emoji-smile position-absolute bottom-0 end-0 m-4 fs-1 text-warning"></i>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- FAQ -->
+    <section class="py-5 container section-divider" style="max-width:1200px;">
+        <h2 class="fs-4 fw-bold mb-4">Preguntas frecuentes</h2>
+        <div class="accordion mb-4" id="faqAccordion">
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">¿Qué es Netflix?</button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body fs-5">Netflix es un servicio de entretenimiento en streaming. Puedes disfrutar de una selección ilimitada de series, películas, documentales y mucho más desde cualquier dispositivo con internet.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">¿Cuánto cuesta Netflix?</button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body fs-5">Los planes van desde $7.190 al mes. Sin contratos ni compromisos. Cancela fácilmente en línea en cualquier momento.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">¿Dónde puedo ver Netflix?</button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body fs-5">Puedes ver Netflix en tu teléfono, tablet, Smart TV, laptop o dispositivo para streaming en cualquier lugar con conexión a internet.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">¿Cómo cancelo?</button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body fs-5">Netflix es flexible. Puedes cancelar fácilmente tu membresía en línea con dos clics, sin cargos por cancelación.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">¿Qué puedo ver en Netflix?</button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body fs-5">Netflix tiene una extensa biblioteca de largometrajes, documentales, series, anime y originales de Netflix.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">¿Es bueno Netflix para los niños?</button>
+                </h2>
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body fs-5">La experiencia Netflix para niños está incluida en tu membresía con controles para padres y un perfil diseñado exclusivamente para ellos.</div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-4">
+            <p class="fs-5 mb-3">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center mx-auto" style="max-width:600px;">
+                <input type="email" class="form-control form-control-lg bg-dark text-white border-secondary" placeholder="Email">
+                <button class="btn bg-netflix-red text-white fw-bold fs-4 px-4 d-flex align-items-center gap-2">
+                    Comenzar <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="container py-5 section-divider text-white-50" style="max-width:1200px;">
+        <p class="mb-4">¿Preguntas? Llama al <a href="#" class="text-white-50 text-decoration-underline">800 914 840</a></p>
+        <div class="row row-cols-2 row-cols-md-4 g-3 mb-4 fs-6">
+            <div class="col">
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Preguntas frecuentes</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Relaciones con inversores</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Términos de uso</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Contáctanos</a>
+            </div>
+            <div class="col">
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Centro de ayuda</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Empleos</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Privacidad</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Prueba de velocidad</a>
+            </div>
+            <div class="col">
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Cuenta</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Canjear tarjetas de regalo</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Preferencias de cookies</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Avisos legales</a>
+            </div>
+            <div class="col">
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Prensa</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Formas de ver</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Información corporativa</a>
+                <a href="#" class="text-white-50 text-decoration-underline d-block mb-2">Solo en Netflix</a>
+            </div>
+        </div>
+        <div class="mb-3">
+            <select class="form-select bg-dark text-white border-secondary" style="width:auto;">
+                <option>🌐 Español</option>
+                <option>English</option>
+            </select>
+        </div>
+        <p class="fs-6 mb-0">Netflix Chile</p>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="serieModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" style="max-width:680px;">
+            <div class="modal-content border-0 overflow-hidden" style="border-radius:8px;">
+                <div class="position-relative" style="height:320px;">
+                    <img id="modal-img" src="" alt="" class="w-100 h-100" style="object-fit:cover; object-position:center top;">
+                    <div style="position:absolute;inset:0;background:linear-gradient(to top, #1a1a1a 10%, rgba(0,0,0,0.1) 60%);"></div>
+                    <div class="position-absolute bottom-0 start-0 px-4 pb-3">
+                        <h2 id="modal-titulo" class="fw-bold text-uppercase text-white mb-0" style="font-size:2.2rem;letter-spacing:2px;"></h2>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="px-4 pb-4 pt-3" style="background:#1a1a1a;">
+                    <div class="d-flex gap-2 flex-wrap mb-3" id="modal-badges"></div>
+                    <p id="modal-desc" class="mb-4" style="font-size:0.95rem;line-height:1.6;color:#ccc;"></p>
+                    <button class="btn bg-netflix-red text-white fw-bold px-4 py-2 d-flex align-items-center gap-2" style="font-size:1rem;border-radius:4px;">
+                        Comienza ya <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/script.js"></script>
 </body>
-
-</html> 
+</html>

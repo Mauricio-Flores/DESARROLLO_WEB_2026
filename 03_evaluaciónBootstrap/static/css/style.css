@@ -1,43 +1,181 @@
 :root {
-    --bs-body-bg: #000;
-    --bs-body-color: #fff;
+    --netflix-red: #e50914;
 }
 
-.hero {
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* nav */
+.navbar {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* rriba */
+.rrib {
     min-height: 100vh;
-    border-bottom: 8px solid #222;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgba(0, 0, 0, 1) 100%),
+        url('../images/1221.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 8px solid #e50914;
 }
 
-.netflix-red {
-    color: #e50914;
+/* tendencias */
+.trending-wrapper {
+    position: relative;
 }
 
-.bg-netflix-red {
-    background-color: #e50914;
+.trending-scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 40px 0 30px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 0;
 }
 
-.bg-netflix-red:hover {
-    background-color: #f40612;
+.trending-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.trend-item {
+    position: relative;
+    flex: 0 0 280px;
+    width: 280px;
+    height: 300px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.trend-item:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.trend-item img {
+    width: 160px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-left: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.trend-number {
+    position: absolute;
+    left: -5px;
+    bottom: -30px;
+    font-size: 180px;
+    font-weight: 900;
+    color: #000;
+    -webkit-text-stroke: 3px #595959;
+    z-index: 1;
+    line-height: 1;
+    user-select: none;
+    font-family: Arial Black, sans-serif;
+}
+
+.trend-number.last {
+    left: -55px;
+    letter-spacing: -20px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    width: 48px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background 0.2s;
+}
+
+.carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.carousel-arrow.left {
+    left: 0;
+}
+
+.carousel-arrow.right {
+    right: 0;
+}
+
+/* razones */
+.reason-card {
+    background: linear-gradient(145deg, #1a2245 0%, #2b0e1a 100%);
+    border-radius: 12px;
+    height: 100%;
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
 }
 
 .section-divider {
-    border-top: 8px solid #222;
+    border-top: 8px solid #232323;
 }
 
+/* Pregunbtas y respuestas */
 .accordion-button {
-    font-size: 1.1rem;
+    background-color: #2d2d2d !important;
+    color: white !important;
+    font-size: 1.2rem;
 }
 
-.tv-wrapper {
-    position: relative;
-    display: inline-block;
+.accordion-button::after {
+    filter: invert(1);
 }
 
-.tv-video {
-    position: absolute;
-    top: 26%;
-    left: 11.5%;
-    width: 77%;
-    height: 47%;
-    object-fit: cover;
+.accordion-button:not(.collapsed) {
+    background-color: #414141 !important;
+    box-shadow: none;
+}
+
+.accordion-item {
+    background-color: #2d2d2d;
+    color: white;
+    margin-bottom: 8px;
+    border: none !important;
+    border-radius: 4px !important;
+}
+
+.accordion-body {
+    background-color: #2d2d2d;
+    color: #ccc;
+}
+
+/* colores */
+.netflix-red {
+    color: var(--netflix-red) !important;
+}
+
+.bg-netflix-red {
+    background-color: var(--netflix-red) !important;
+    border: none;
 }
